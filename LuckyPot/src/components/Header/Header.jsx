@@ -50,7 +50,7 @@ const ConnectWallet = async()=>{
           <li>
             <button
               onClick={ConnectWallet}
-              className="text-black bg-red-700 font-bold ml-170  rounded-full p-1 animate-pulse text-lg hover:text-white "
+              className="text-black bg-red-700 font-bold ml-175  rounded-full p-1 animate-pulse text-lg hover:text-white "
             >
               Connect Wallet
            </button>
