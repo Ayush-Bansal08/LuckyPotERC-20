@@ -11,7 +11,7 @@ const walletABI = [{"type":"constructor","inputs":[{"name":"pricefeed","type":"a
     useEffect(() => {
       const fetchLotteryWinner = async () => {
         try {
-          const provider = new ethers.providers.JsonRpcProvider(import.meta.env.VITE_RPC_URL);
+          const provider = new ethers.providers.JsonRpcProvider("https://eth-sepolia.g.alchemy.com/v2/H_BVCva0za8l4qjBADOoD");
           const contract = new ethers.Contract(walletAddress, walletABI, provider);
 
           const winner = await contract.getWinner();
